@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee and Donut</title>
+    <link type="text/css" rel="stylesheet" href="FAQ.css" />
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://kit.fontawesome.com/a5baafa55e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
+    <style>
+        body {
+            font-family: "Sofia", sans-serif;
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!--Side Nav-->
+    <nav id="sideNav">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about.html">Lorem</a></li>
+        </ul>
+        <i class="fa-solid fa-bars fa-2x" id="menuBtn"></i>
+    </nav>
+    <!--Side Nav Finish-->
+    <!--FAQ-->
+    <h2>Frequently Asked Questions</h2>
+
+    <div style="visibility: hidden; position: absolute; width: 0px; height: 0px;">
+        <svg xmlns="http://www.w3.org/2000/svg">
+        <symbol viewbox="0 0 24 24" id="expand-more">
+          <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"/><path d="M0 0h24v24H0z" fill="none"/>
+        </symbol>
+        <symbol viewbox="0 0 24 24" id="close">
+          <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/><path d="M0 0h24v24H0z" fill="none"/>
+        </symbol>
+      </svg>
+    </div>
+
+    <details open>
+        <summary>
+            Does this product have what I need?
+            <svg class="control-icon control-icon-expand" width="24" height="24" role="presentation"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#expand-more" /></svg>
+            <svg class="control-icon control-icon-close" width="24" height="24" role="presentation"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" /></svg>
+        </summary>
+        <p>Totally. Totally does.</p>
+    </details>
+
+    <details>
+
+        <summary>
+            Can I use it all the time?
+            <svg class="control-icon control-icon-expand" width="24" height="24" role="presentation"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#expand-more" /></svg>
+            <svg class="control-icon control-icon-close" width="24" height="24" role="presentation"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" /></svg>
+        </summary>
+        <p>Of course you can, we won't stop you.</p>
+    </details>
+
+    <details>
+        <summary>
+            Are there any restrictions?
+            <svg class="control-icon control-icon-expand" width="24" height="24" role="presentation"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#expand-more" /></svg>
+            <svg class="control-icon control-icon-close" width="24" height="24" role="presentation"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" /></svg>
+        </summary>
+        <p>Only your imagination my friend. Go forth!</p>
+    </details>
+    <!--Footer-->
+    <footer id="footer">
+        <div class="footer-row">
+            <hr>
+            <div class="footer-left">
+                <div class="copyright">
+                    <img class="logo" src="coffee-cup-1.svg" alt="">
+                    <p>
+                        Mozia Precious&#10083; @copyright 2022
+                    </p>
+                </div>
+            </div>
+            <div class="footer-right">
+                <div class="footer-links">
+                    <div class="link-title">
+                        <h4>Menu</h4>
+                        <small>
+              <a href="#">Coffees</a> <br>
+              <a href="#">Tea</a>
+              <a href="#">Smothies</a> <br>
+              <a href="#">Fresh Juice</a> <br>
+              <a href="#">Pastries</a>
+            </small>
+                    </div>
+                    <div class="link-title">
+                        <h4>About Us</h4>
+                        <small>
+              <a href="#">Mission</a> <br>
+              <a href="#">Vision</a>
+            </small>
+                    </div>
+                    <div class="link-title">
+                        <h4>Suggestions</h4>
+                        <small>
+              <a href="#">Suggestions</a> <br>
+              <a href="FAQ.html">FAQS</a>
+            </small>
+                    </div>
+                    <div class="link-title">
+                        <h4>Contact</h4>
+                        <small>
+              <a href="#">chibundumozia@gmail.com</a> <br>
+              <a href="#">+2347059718601</a>
+            </small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--Social Icons-->
+    <div class="social-icon">
+        <a href="https://github.com/Kodedbykenzie" title="1"><i class="fa fa-github"></i></a>
+        <a href="https://www.instagram.com/kodedbykenzie/" title="4"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://twitter.com/chibundu_" title="2"><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/in/precious-mozia-57b735232/" title="4"><i class="fa-brands fa-linkedin-in"></i></a>
+    </div>
+
+    <!--Script-->
+    <script>
+        window.sr = ScrollReveal();
+        sr.reveal('.anime-left', {
+            origin: 'left',
+            duration: 1000,
+            distance: '25rem',
+            delay: 300
+        })
+
+        sr.reveal('.anime-right', {
+            origin: 'right',
+            duration: 1000,
+            distance: '25rem',
+            delay: 600
+        })
+
+        sr.reveal('.anime-top', {
+            origin: 'top',
+            duration: 1500,
+            distance: '25rem',
+            delay: 300
+        })
+
+        sr.reveal('.anime-bottom', {
+            origin: 'bottom',
+            duration: 1000,
+            distance: '25rem',
+            delay: 300
+        })
+    </script>
+
+    <script>
+        let menuBtn = document.getElementById("menuBtn");
+        let sideNav = document.getElementById("sideNav");
+
+        sideNav.style.right = "-250px";
+        menuBtn.onclick = function menuToggle() {
+            if (sideNav.style.right === "-250px") {
+                sideNav.style.right = "0px";
+            } else {
+                sideNav.style.right = "-250px";
+            }
+        }
+    </script>
+
+</body>
+
+</html>

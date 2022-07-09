@@ -1,0 +1,459 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+* ::-webkit-scrollbar {
+    width: 8px;
+    background-color: #eee;
+}
+
+* ::-webkit-scrollbar-track {
+    background-color: #ccc;
+}
+
+* ::-webkit-scrollbar-thumb {
+    background-color: var(--color);
+    border-radius: 5px;
+}
+
+ :root {
+    --color: #8A6338;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #fff;
+    overflow-x: hidden !important;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+p {
+    line-height: 25px;
+    color: #595959;
+    text-align: justify;
+}
+
+a {
+    text-decoration: none;
+    color: #595959;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+li {
+    list-style-type: none;
+}
+
+hr {
+    width: 100%;
+    border: 0;
+    border-top: 1px solid var(--color);
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.circle {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin: 15px 0;
+    border-radius: 50%;
+    background-color: var(--color);
+}
+
+.btn {
+    padding: 12px 20px;
+    outline: none;
+    border: 2px solid var(--color);
+    border-radius: 5px;
+    background-color: transparent;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.btn:hover {
+    background-color: var(--color);
+}
+
+.line {
+    line-height: 8px;
+}
+
+.line1,
+.line2,
+.line3 {
+    display: inline-block;
+    background-color: var(--color);
+}
+
+.line1 {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-top: 3px;
+}
+
+.line2 {
+    width: 80px;
+    height: 1px;
+}
+
+.line3 {
+    width: 60px;
+    height: 1px;
+}
+
+.logo {
+    width: 300px;
+    height: 150px;
+    margin: 10px 0;
+}
+
+.header-content {
+    max-width: 600px;
+    margin-top: 10px;
+}
+
+.explore-now {
+    margin: 20px 0 30px 0;
+}
+
+.headerimg {
+    position: absolute;
+    width: 400px;
+    right: 0;
+    top: 50px;
+}
+
+
+/*Header Finish*/
+
+
+/*Side Nav*/
+
+#sideNav {
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    right: -250px;
+    top: 0;
+    background-color: var(--color);
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+#sideNav ul li {
+    margin: 30px;
+}
+
+#sideNav ul li:first-child {
+    margin-top: 45px;
+}
+
+#sideNav ul li a {
+    color: black;
+}
+
+#menuBtn {
+    position: fixed;
+    right: 40px;
+    top: 30px;
+    z-index: 1;
+    cursor: pointer;
+}
+
+
+/*Side Nav Finish*/
+
+
+/*Footer*/
+
+#footer {
+    margin: 40px 0;
+}
+
+.footer-row,
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.footer-left {
+    flex-basis: 30%;
+}
+
+.footer-right {
+    flex-basis: 70%;
+    margin-top: 50px;
+}
+
+.link-title h4 {
+    margin-bottom: 15px;
+    color: var(--color);
+}
+
+.copyright small,
+.link-title small {
+    display: block;
+    font-size: 14px;
+    color: #595959;
+    line-height: 1.8;
+}
+
+
+/*Contact*/
+
+button {
+    overflow: visible;
+}
+
+button,
+select {
+    text-transform: none;
+}
+
+button,
+input,
+select,
+textarea {
+    color: #8A6338;
+    font: inherit;
+    margin: 0;
+}
+
+input {
+    line-height: normal;
+}
+
+textarea {
+    overflow: auto;
+}
+
+#container {
+    border: solid 3px #8A6338;
+    max-width: 768px;
+    margin: 60px auto;
+    position: relative;
+}
+
+form {
+    padding: 37.5px;
+    margin: 50px 0;
+}
+
+h1 {
+    color: #474544;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 7px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.underline {
+    margin: -0.512em auto;
+    width: 80px;
+}
+
+.icon_wrapper {
+    margin: 50px auto 0;
+    width: 100%;
+}
+
+.icon {
+    display: block;
+    fill: #474544;
+    height: 50px;
+    margin: 0 auto;
+    width: 50px;
+}
+
+.email {
+    float: right;
+    width: 45%;
+}
+
+input[type='text'],
+[type='email'],
+select,
+textarea {
+    background: none;
+    border: none;
+    border-bottom: solid 2px #8A6338;
+    color: #474544;
+    font-size: 15px;
+    font-weight: 100;
+    letter-spacing: 1px;
+    margin: 0em 0 1.875em 0;
+    padding: 0 0 0.875em 0;
+    text-transform: uppercase;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+input[type='text']:focus,
+[type='email']:focus,
+textarea:focus {
+    outline: none;
+    padding: 0 0 0.875em 0;
+}
+
+.message {
+    float: none;
+}
+
+.name {
+    float: left;
+    width: 45%;
+}
+
+select {
+    background: url('https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-arrow-down-32.png') no-repeat right;
+    outline: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+.subject {
+    width: 100%;
+}
+
+.telephone {
+    width: 100%;
+}
+
+textarea {
+    line-height: 150%;
+    height: 150px;
+    resize: none;
+    width: 100%;
+}
+
+ ::-webkit-input-placeholder {
+    color: #474544;
+}
+
+ :-moz-placeholder {
+    color: #474544;
+    opacity: 1;
+}
+
+ ::-moz-placeholder {
+    color: #474544;
+    opacity: 1;
+}
+
+ :-ms-input-placeholder {
+    color: #474544;
+}
+
+#form_button {
+    background: none;
+    border: solid 2px #474544;
+    color: #8A6338;
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'Helvetica', Arial, sans-serif;
+    font-size: 0.875em;
+    font-weight: bold;
+    outline: none;
+    padding: 20px 35px;
+    text-transform: uppercase;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+#form_button:hover {
+    background: #8A6338;
+    color: #F2F3EB;
+}
+
+@media screen and (max-width: 768px) {
+    #container {
+        margin: 20px auto;
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 26px;
+    }
+    .underline {
+        width: 68px;
+    }
+    #form_button {
+        padding: 15px 25px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    h1 {
+        font-size: 18px;
+    }
+    .icon {
+        height: 35px;
+        width: 35px;
+    }
+    .underline {
+        width: 53px;
+    }
+    input[type='text'],
+    [type='email'],
+    select,
+    textarea {
+        font-size: 0.875em;
+    }
+}
+
+
+/*Social Icons*/
+
+.social-icon {
+    position: fixed;
+    top: 40%;
+    left: 0;
+    z-index: 1;
+}
+
+.social-icon a {
+    display: block;
+    margin: 0 0 15px 20px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.fa-brands:hover {
+    transform: scale(1.2);
+}
